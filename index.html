@@ -11,47 +11,51 @@
   <script src="js/uikit-icons.min.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
 </head>
 
 <body>
 <!--Navigation bar-->
-<nav style="background:white" class="uk-navbar-container uk-margin" uk-navbar>
+  <nav class="uk-navbar-container uk-margin uk-navbar" style="background:white">
     <div class="uk-navbar-center">
-        <a class="uk-navbar-item uk-logo bd-logo" href="#">
-          <span style="color:#00cc00">Bright</span>
-          <span style="color:#3c78d8">Desk</span>
-        </a>
-        <ul class="uk-navbar-nav">
-            <li>
-              <a href="#modal-center" uk-toggle>Support</a>
-                <div id="modal-center" class="uk-flex-middle" uk-modal>
-                  <div id="modal-mod" class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
-                    <button class="uk-modal-close-default" type="button" uk-close></button>
-                      <div id="iframe-without-text">
-                        <iframe
-                              id="iframe-2"
-                              width="500"
-                              height="250"
-                              style="border:none;"
-                              scrolling="no"
-                              src="https://relion.screenconnect.com/"
-                              title="iframe">
-                        </iframe>
-                      </div>
-                  </div>
-                </div>
-            </li>
-        </ul>
+      <a class="uk-navbar-item uk-text-bottom uk-logo bd-logo" href="#">
+        <span style="color:#00cc00">Bright</span>
+        <span style="color:#3c78d8">Desk</span>
+      </a>
+      <img id="nav-logo-img" src="brightdesk-logo-lamp.png" href="#">
+    </div>
+
+<!--Support Button-->
+    <div class="uk-navbar-item uk-navbar-right">
+      <button class="uk-button uk-button-default" href="#modal-center" uk-toggle>Support</button>
+        <div id="modal-center" class="uk-flex-middle" uk-modal>
+          <div id="modal-mod" class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+            <button class="uk-modal-close-default" type="button" uk-close>Close</button>
+              <div id="iframe-without-text">
+                <iframe
+                      id="iframe-2"
+                      width="500"
+                      height="250"
+                      style="border:none;"
+                      scrolling="no"
+                      src="https://relion.screenconnect.com/"
+                      title="iframe">
+                </iframe>
+              </div>
+          </div>
+        </div>
     </div>
   </nav>
+
 <!--First Card: Site under construction-->
-  <div class="uk-card uk-card-default uk-card-body uk-width-2-3 uk-card-large uk-align-center">
-    <div class="uk-align-right">
-    <img id="logo-card" src="brightdesk-logo.png"/>
-    </div>
+
+  <div class="uk-card uk-card-default uk-card-large uk-width-2-3 uk-card-body uk-align-center">
+    <h3 class="uk-card-title">Coming soon...</h3>
       <p>The BrightDesk Business IT website is currently under construction.</p>
   </div>
+
 <!-- Second card: About Us-->
+
   <div class="uk-card uk-card-default uk-card-large uk-width-2-3 uk-card-body uk-align-center">
     <h3 class="uk-card-title">About Us</h3>
     <p>Located in Los Angeles, we specialize in managing IT for small businesses. You can contact us for support or inquiries through the following links:</p>
@@ -60,6 +64,7 @@
   </div>
 
 <!--Make web content expand to full page-->
+
   <div uk-height-viewport="expand:true"></div>
 </body>
 
